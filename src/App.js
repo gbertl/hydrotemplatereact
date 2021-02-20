@@ -203,7 +203,7 @@ function App() {
             <div className="col-md-4 col-sm-12">
               <div className="about-image">
                 <img
-                  src="images/about-image.jpg"
+                  src={`${process.env.PUBLIC_URL}/assets/images/about-image.jpg`}
                   className="img-responsive"
                   alt=""
                 />
@@ -230,7 +230,7 @@ function App() {
                 <div className="media-object media-left">
                   <a href="blog-detail.html">
                     <img
-                      src="images/blog-image1.jpg"
+                      src={`${process.env.PUBLIC_URL}/assets/images/blog-image1.jpg`}
                       className="img-responsive"
                       alt=""
                     />
@@ -262,7 +262,7 @@ function App() {
                 <div className="media-object media-left">
                   <a href="blog-detail.html">
                     <img
-                      src="images/blog-image2.jpg"
+                      src={`${process.env.PUBLIC_URL}/assets/images/blog-image2.jpg`}
                       className="img-responsive"
                       alt=""
                     />
@@ -292,7 +292,7 @@ function App() {
                 <div className="media-object media-left">
                   <a href="blog-detail.html">
                     <img
-                      src="images/blog-image3.jpg"
+                      src={`${process.env.PUBLIC_URL}/assets/images/blog-image3.jpg`}
                       className="img-responsive"
                       alt=""
                     />
@@ -322,7 +322,7 @@ function App() {
                 <div className="media-object media-left">
                   <a href="blog-detail.html">
                     <img
-                      src="images/blog-image4.jpg"
+                      src={`${process.env.PUBLIC_URL}/assets/images/blog-image4.jpg`}
                       className="img-responsive"
                       alt=""
                     />
@@ -367,7 +367,7 @@ function App() {
               <div className="work-thumb">
                 <a href="images/work-image1.jpg" className="image-popup">
                   <img
-                    src="images/work-image1.jpg"
+                    src={`${process.env.PUBLIC_URL}/assets/images/work-image1.jpg`}
                     className="img-responsive"
                     alt="Work"
                   />
@@ -385,7 +385,7 @@ function App() {
               <div className="work-thumb">
                 <a href="images/work-image2.jpg" className="image-popup">
                   <img
-                    src="images/work-image2.jpg"
+                    src={`${process.env.PUBLIC_URL}/assets/images/work-image2.jpg`}
                     className="img-responsive"
                     alt="Work"
                   />
@@ -403,7 +403,7 @@ function App() {
               <div className="work-thumb">
                 <a href="images/work-image3.jpg" className="image-popup">
                   <img
-                    src="images/work-image3.jpg"
+                    src={`${process.env.PUBLIC_URL}/assets/images/work-image3.jpg`}
                     className="img-responsive"
                     alt="Work"
                   />
@@ -421,7 +421,7 @@ function App() {
               <div className="work-thumb">
                 <a href="images/work-image4.jpg" className="image-popup">
                   <img
-                    src="images/work-image4.jpg"
+                    src={`${process.env.PUBLIC_URL}/assets/images/work-image4.jpg`}
                     className="img-responsive"
                     alt="Work"
                   />
