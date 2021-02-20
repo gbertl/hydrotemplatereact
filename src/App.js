@@ -773,14 +773,6 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* SCRIPTS  */}
-      <script src="js/jquery.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.stellar.min.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/smoothscroll.js"></script>
-      <script src="js/custom.js"></script>
     </div>
   );
 }
