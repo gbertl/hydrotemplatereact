@@ -1,4 +1,16 @@
+import {useEffect} from "react";
+
 function App() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = `${process.env.PUBLIC_URL}/assets/js/custom.js`;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="App">
       {/* PRE LOADER  */}
@@ -110,8 +122,8 @@ function App() {
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe
                     src="https://www.youtube.com/embed/AqcjdkPMPJA"
-                    frameborder="0"
-                    allowfullscreen
+                    frameBorder="0"
+                    allowFullScreen
                   ></iframe>
                 </div>
               </div>
@@ -363,7 +375,10 @@ function App() {
             <div className="col-md-3 col-sm-6">
               {/* WORK THUMB  */}
               <div className="work-thumb">
-                <a href="images/work-image1.jpg" className="image-popup">
+                <a
+                  href={`${process.env.PUBLIC_URL}/assets/images/work-image1.jpg`}
+                  className="image-popup"
+                >
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/images/work-image1.jpg`}
                     className="img-responsive"
@@ -381,7 +396,10 @@ function App() {
             <div className="col-md-3 col-sm-6">
               {/* WORK THUMB  */}
               <div className="work-thumb">
-                <a href="images/work-image2.jpg" className="image-popup">
+                <a
+                  href={`${process.env.PUBLIC_URL}/assets/images/work-image2.jpg`}
+                  className="image-popup"
+                >
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/images/work-image2.jpg`}
                     className="img-responsive"
@@ -399,7 +417,10 @@ function App() {
             <div className="col-md-3 col-sm-6">
               {/* WORK THUMB  */}
               <div className="work-thumb">
-                <a href="images/work-image3.jpg" className="image-popup">
+                <a
+                  href={`${process.env.PUBLIC_URL}/assets/images/work-image3.jpg`}
+                  className="image-popup"
+                >
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/images/work-image3.jpg`}
                     className="img-responsive"
@@ -417,7 +438,10 @@ function App() {
             <div className="col-md-3 col-sm-6">
               {/* WORK THUMB  */}
               <div className="work-thumb">
-                <a href="images/work-image4.jpg" className="image-popup">
+                <a
+                  href={`${process.env.PUBLIC_URL}/assets/images/work-image4.jpg`}
+                  className="image-popup"
+                >
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/images/work-image4.jpg`}
                     className="img-responsive"
@@ -530,7 +554,7 @@ function App() {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */}
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
             </div>
@@ -637,7 +661,7 @@ function App() {
       <section
         className="modal fade"
         id="modal-form"
-        tabindex="-1"
+        tabIndex="-1"
         role="dialog"
         aria-labelledby="myModalLabel"
         aria-hidden="true"
