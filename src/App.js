@@ -7,6 +7,7 @@ import Work from "./Work";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Modal from "./Modal";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -20,38 +21,44 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      {/* PRE LOADER  */}
-      <section className="preloader">
-        <div className="spinner">
-          <span className="spinner-rotate"></span>
-        </div>
-      </section>
+    <Router>
+      <div className="App">
+        {/* PRE LOADER  */}
+        <section className="preloader">
+          <div className="spinner">
+            <span className="spinner-rotate"></span>
+          </div>
+        </section>
 
-      {/* MENU  */}
-      <Nav />
+        {/* MENU  */}
+        <Nav />
 
-      {/* HOME  */}
-      <Home />
+        <Switch>
+          <Route exact path="/">
+            {/* HOME  */}
+            <Home />
 
-      {/* ABOUT  */}
-      <About />
+            {/* ABOUT  */}
+            <About />
 
-      {/* BLOG  */}
-      <Blog />
+            {/* BLOG  */}
+            <Blog />
 
-      {/* WORK  */}
-      <Work />
+            {/* WORK  */}
+            <Work />
 
-      {/* CONTACT  */}
-      <Contact />
+            {/* CONTACT  */}
+            <Contact />
+          </Route>
+        </Switch>
 
-      {/* FOOTER  */}
-      <Footer />
+        {/* FOOTER  */}
+        <Footer />
 
-      {/* MODAL  */}
-      <Modal />
-    </div>
+        {/* MODAL  */}
+        <Modal />
+      </div>
+    </Router>
   );
 }
 

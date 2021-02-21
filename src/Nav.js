@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function Nav() {
   return (
     <section
@@ -17,9 +19,9 @@ function Nav() {
           </button>
 
           {/* lOGO TEXT HERE  */}
-          <a href="index.html" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             Hydro
-          </a>
+          </Link>
         </div>
 
         {/* MENU LINKS  */}
