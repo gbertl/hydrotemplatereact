@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Modal from "./Modal";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import BlogDetail from "./BlogDetail";
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,10 @@ function App() {
         <Nav />
 
         <Switch>
+          <Route path="/blog-detail">
+            <BlogDetail />
+          </Route>
+
           <Route exact path="/">
             {/* HOME  */}
             <Home />

@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function Blog() {
   return (
     <section id="blog" data-stellar-background-ratio="0.5">
@@ -14,29 +16,29 @@ function Blog() {
             {/* BLOG THUMB  */}
             <div className="media blog-thumb">
               <div className="media-object media-left">
-                <a href="blog-detail.html">
+                <Link to="/blog-detail">
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/images/blog-image1.jpg`}
                     className="img-responsive"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
               <div className="media-body blog-info">
                 <small>
                   <i className="fa fa-clock-o"></i> December 22, 2017
                 </small>
                 <h3>
-                  <a href="blog-detail.html">
+                  <Link to="/blog-detail">
                     How To Find Out Beautiful Workspace.
-                  </a>
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit consectetur adipiscing morbi venenatis.
                 </p>
-                <a href="blog-detail.html" className="btn section-btn">
+                <Link to="/blog-detail" className="btn section-btn">
                   Read article
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -45,27 +47,27 @@ function Blog() {
             {/* BLOG THUMB  */}
             <div className="media blog-thumb">
               <div className="media-object media-left">
-                <a href="blog-detail.html">
+                <Link to="/blog-detail">
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/images/blog-image2.jpg`}
                     className="img-responsive"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
               <div className="media-body blog-info">
                 <small>
                   <i className="fa fa-clock-o"></i> December 18, 2017
                 </small>
                 <h3>
-                  <a href="blog-detail.html">woman sportwear.</a>
+                  <Link to="/blog-detail">woman sportwear.</Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit consectetur adipiscing morbi venenatis.
                 </p>
-                <a href="blog-detail.html" className="btn section-btn">
+                <Link to="/blog-detail" className="btn section-btn">
                   Read more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -74,27 +76,27 @@ function Blog() {
             {/* BLOG THUMB  */}
             <div className="media blog-thumb">
               <div className="media-object media-left">
-                <a href="blog-detail.html">
+                <Link to="/blog-detail">
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/images/blog-image3.jpg`}
                     className="img-responsive"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
               <div className="media-body blog-info">
                 <small>
                   <i className="fa fa-clock-o"></i> December 14, 2017
                 </small>
                 <h3>
-                  <a href="blog-detail.html">new creative fashion.</a>
+                  <Link to="/blog-detail">new creative fashion.</Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit consectetur adipiscing morbi venenatis.
                 </p>
-                <a href="blog-detail.html" className="btn section-btn">
+                <Link to="/blog-detail" className="btn section-btn">
                   Read article
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -103,29 +105,29 @@ function Blog() {
             {/* BLOG THUMB  */}
             <div className="media blog-thumb">
               <div className="media-object media-left">
-                <a href="blog-detail.html">
+                <Link to="/blog-detail">
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/images/blog-image4.jpg`}
                     className="img-responsive"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
               <div className="media-body blog-info">
                 <small>
                   <i className="fa fa-clock-o"></i> December 10, 2017
                 </small>
                 <h3>
-                  <a href="blog-detail.html">
+                  <Link to="/blog-detail">
                     minimalist design trend in 2018.
-                  </a>
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit consectetur adipiscing morbi venenatis.
                 </p>
-                <a href="blog-detail.html" className="btn section-btn">
+                <Link to="/blog-detail" className="btn section-btn">
                   View Detail
-                </a>
+                </Link>
               </div>
             </div>
           </div>
