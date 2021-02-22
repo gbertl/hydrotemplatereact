@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import Modal from "./Modal";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import BlogDetail from "./BlogDetail";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         {/* PRE LOADER  */}
         <section className="preloader">
