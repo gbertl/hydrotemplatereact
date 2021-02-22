@@ -1,4 +1,8 @@
+import usePreloader from "./hooks/usePreloader";
+
 function BlogDetail() {
+  usePreloader();
+
   return (
     <>
       {/* BLOG HEADER */}

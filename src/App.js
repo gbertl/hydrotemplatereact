@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Modal from "./Modal";
@@ -22,13 +22,6 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="App">
-        {/* PRE LOADER  */}
-        <section className="preloader">
-          <div className="spinner">
-            <span className="spinner-rotate"></span>
-          </div>
-        </section>
-
         {/* MENU  */}
         <Nav />
 
