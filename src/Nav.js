@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
 
 function Nav() {
   return (
@@ -28,29 +29,29 @@ function Nav() {
         <div className="collapse navbar-collapse">
           <ul className="nav navbar-nav navbar-nav-first">
             <li>
-              <a href="#home" className="smoothScroll">
+              <HashLink smooth to="/#home">
                 Home
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a href="#about" className="smoothScroll">
+              <HashLink smooth to="/#about">
                 About
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a href="#blog" className="smoothScroll">
+              <HashLink smooth to="/#blog">
                 Blog
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a href="#work" className="smoothScroll">
+              <HashLink smooth to="/#work">
                 Our Work
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a href="#contact" className="smoothScroll">
+              <HashLink smooth to="/#contact">
                 Contacts
-              </a>
+              </HashLink>
             </li>
           </ul>
 
