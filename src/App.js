@@ -1,15 +1,11 @@
 import {useEffect} from "react";
 import Nav from "./Nav";
-import Home from "./Home";
-import About from "./About";
-import Blog from "./Blog";
-import Work from "./Work";
-import Contact from "./Contact";
 import Footer from "./Footer";
 import Modal from "./Modal";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import BlogDetail from "./BlogDetail";
 import ScrollToTop from "./ScrollToTop";
+import Home from "./Home";
 
 function App() {
   useEffect(() => {
@@ -41,22 +37,7 @@ function App() {
             <BlogDetail />
           </Route>
 
-          <Route exact path="/">
-            {/* HOME  */}
-            <Home />
-
-            {/* ABOUT  */}
-            <About />
-
-            {/* BLOG  */}
-            <Blog />
-
-            {/* WORK  */}
-            <Work />
-
-            {/* CONTACT  */}
-            <Contact />
-          </Route>
+          <Route exact path="/" component={Home} />
         </Switch>
 
         {/* FOOTER  */}
